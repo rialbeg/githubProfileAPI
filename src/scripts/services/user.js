@@ -1,14 +1,10 @@
-import {baseUrl} from '../variables.js';
+import {baseUrl} from '/src/scripts/variables.js';
 
-async function user(userName){
+async function getUser(userName){
     const url = `${baseUrl}/${userName}`;
-    const response = await fetch(url, {
-        headers: {
-            Authorization: `token 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`
-        }
-    });
+    const response = await fetch(url);
     return await response.json();
 }
 
 
-export {user}
+export { getUser }

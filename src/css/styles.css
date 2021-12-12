@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
-}
-
-img {
-  max-width: 100%;
+html{
+  font-size:62.5%;
 }
 
 body {
@@ -24,8 +18,15 @@ main {
   padding: 50px 0 0;      
 }
 
+.divider{
+  /* border-top: 1px solid black; */
+  width: 90%;
+  margin-top:40px;
+  margin-bottom:30px;
+}
+
 .devicon-github-original{
-  font-size: 60px;
+  font-size: 6rem;
   margin-bottom: 30px;
   color: #FFFFFF;
 }
@@ -55,14 +56,14 @@ main {
 }
 
 .container header h2 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
 .container header #input-search {
   width: 400px;
-  font-size: 17px;
+  font-size: 1.7rem;
   margin: 0 auto;
   padding: 10px;
   border-radius: 7px;
@@ -71,7 +72,7 @@ main {
 
 .container header #btn-search {
   width: 200px;
-  font-size: 17px;
+  font-size: 1.7rem;
   margin: 20px auto 0;
   padding: 10px;
   border-radius: 7px;  
@@ -92,6 +93,7 @@ main {
   padding: 40px;  
 }
 
+
 .container .profile-data .info {
   display: flex;  
   flex-wrap: wrap;
@@ -110,20 +112,49 @@ main {
 }
 
 .container .profile-data .info h1{
-  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .container .profile-data .info p{
-  font-size: 15px;  
+  font-size: 1.5rem;  
   font-weight: 400;
   line-height: 23px;
 }
 
+.container .profile-data .follow-info{
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-top:50px;
+}
+.container .profile-data .follow-info .followers p,
+.container .profile-data .follow-info .following p{
+  font-size: 2rem;
+  margin-bottom:40px;
+}
+.container .profile-data .follow-info .followers div,
+.container .profile-data .follow-info .following div{
+  color: white;
+  border-radius: 50%;
+  padding:20px 10px;
+  font-size: 2rem;
+  margin-bottom:40px;
+}
+.container .profile-data .follow-info .followers div{
+  background-color:hotpink;
+}
+.container .profile-data .follow-info .following div{
+  background-color:purple;
+}
+
+
 /* REPOSITORIES */
 
 .container .profile-data .repositories h2{
+  font-size:2.4rem;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -135,14 +166,32 @@ main {
 }
 
 .container .profile-data .repositories ul li a{
-  padding: 20px;
+  font-size:1.2rem;
+  padding: 10px 15px;
   border: 1px solid grey;  
   margin: 20px;
   display: block;
   border-radius: 7px;
+  text-align: left;
   transition: 0.3s ease-in-out;
 }
 
+.container .profile-data .repositories ul li a h3{
+  font-size:2rem;
+  margin-bottom: 10px;
+}
+
+.container .profile-data .repositories ul li a .info-icons{
+  display: flex;
+}
+.container .profile-data .repositories ul li a .info-icons div{
+  background-color:rgb(121, 109, 196);
+  margin-right:5px;
+  padding:5px;
+  border-radius:5px;
+  color: white;
+  font-size:1.5rem;
+}
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
@@ -152,6 +201,26 @@ main {
   display: none;
 }
 
+
+/* ACTIVITIES */
+.container .profile-data .activities{
+  /* display: flex;
+  flex-direction: column; */
+}
+.container .profile-data .activities h2{
+  font-size: 2.3rem;
+  font-weight:300;
+  margin-bottom:20px;
+}
+.container .profile-data .activities h3{
+  font-size: 1.5rem;
+  text-align:left;
+  /* width:90%; */
+}
+.container .profile-data .activities span{
+  font-weight: 300;
+  margin-left: 10px;
+}
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
@@ -164,7 +233,7 @@ main {
   }
 
   .container header h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
   }
 }
