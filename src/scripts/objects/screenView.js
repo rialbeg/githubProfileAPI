@@ -76,7 +76,9 @@ const screenView = {
             `;
     
         }
-        
+    },
+    renderNotFound(){
+        this.userProfile.innerHTML = '<h3 style="font-size:2rem">Usuário não encontrado!</h3>';
     }
 };
 
